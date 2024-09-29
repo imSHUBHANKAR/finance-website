@@ -61,6 +61,7 @@ import AboutUs from './components/finance/aboutUs/AboutUs'
 //import ContactUs from './components/finance/financeContent/ContactUs'
 import ContactUs from './components/finance/contactUs/ContactUs'
 import NavBar from './components/finance/NavBar'
+import NotFound from './components/finance/NotFound'
 
 function App() {
   return (
@@ -73,6 +74,8 @@ function App() {
         <Route path='/communities' element={<Communities />} />
         <Route path='/about-us' element={<AboutUs />} />
         <Route path='/contact-us' element={<ContactUs />} />
+
+        <Route path="*" element={<NotFound />} />
       </Routes>
       {/* Optional Footer Links */}
       {/* <div>
