@@ -89,7 +89,7 @@ function NavBar() {
   };
 
   return (
-    <nav className='flex justify-around items-center bg-[#3C096C] sticky top-0 z-50 backdrop-filter backdrop-blur-sm bg-opacity-70 border-b-2 border-[#3C096C] gap-5'>
+    <nav className='flex justify-around items-center bg-[#5A189A] sticky top-0 z-50 backdrop-filter backdrop-blur-sm bg-opacity-90 border-b-2 border-[#3C096C] gap-5'>
       {/* Logo */}
       <div className='flex items-center'>
         <img src={FinanceLogo} alt='Logo' className='w-28 h-14' />
@@ -98,12 +98,12 @@ function NavBar() {
       {/* Desktop Menu */}
       <div className='hidden md:flex text-white gap-5'>
         <ul className='flex sm:gap-2 md:gap-3 lg:gap-10'>
-          <li><a href='#'>Home</a></li>
-          <li><a href='#'>Courses</a></li>
-          <li><a href='#'>FinStreet Media</a></li>
-          <li><a href='#'>Communities</a></li>
-          <li><a href='#'>About Us</a></li>
-          <li><a href='#'>Contact Us</a></li>
+          <li><a href='/'>Home</a></li>
+          <li><a href='/courses'>Courses</a></li>
+          <li><a href='/fin-street-media'>FinStreet Media</a></li>
+          <li><a href='/communities'>Communities</a></li>
+          <li><a href='/about-us'>About Us</a></li>
+          <li><a href='/contact-us'>Contact Us</a></li>
         </ul>
       </div>
 
@@ -136,12 +136,12 @@ function NavBar() {
       {isMobileMenuOpen && (
         <div className='absolute top-16 left-20 right-20 bg-[#3C096C] text-white flex flex-col items-center gap-5 py-5 md:hidden bg-opacity-80  backdrop-filter backdrop-blur-sm  rounded-b-3xl border-2 border-[#3C096C]'>
           <ul className='flex flex-col gap-5 '>
-            <li><a href='#'>Home</a></li>
-            <li><a href='#'>Courses</a></li>
-            <li><a href='#'>FinStreet Media</a></li>
-            <li><a href='#'>Communities</a></li>
-            <li><a href='#'>About Us</a></li>
-            <li><a href='#'>Contact Us</a></li>
+            <li><a href='/'>Home</a></li>
+            <li><a href='/courses'>Courses</a></li>
+            <li><a href='/fin-street-media'>FinStreet Media</a></li>
+            <li><a href='/communities'>Communities</a></li>
+            <li><a href='/about-us'>About Us</a></li>
+            <li><a href='/contact-us'>Contact Us</a></li>
           </ul>
           <div className="flex items-center bg-white rounded-full px-2 py-1 shadow-lg w-10/12">
             <FaSearch className="text-purple-400 text-xl" />

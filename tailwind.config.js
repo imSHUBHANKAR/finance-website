@@ -8,4 +8,13 @@ export default {
     extend: {},
   },
   plugins: [],
+  addUtilities: {
+    '.hide-scrollbar': {
+      'scrollbar-width': 'none', /* Firefox */
+      '-ms-overflow-style': 'none', /* Internet Explorer 10+ */
+    },
+    '.hide-scrollbar::-webkit-scrollbar': {
+      'display': 'none', /* Chrome, Safari, Opera */
+    },
+  }
 }

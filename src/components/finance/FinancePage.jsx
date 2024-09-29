@@ -6,9 +6,11 @@ import FinanceContent from './financeContent/FinanceContent'
 function FinancePage() {
   return (
     <>
-    <NavBar/>
+    <div className='bg-[#5A189A]'>
+    {/* <NavBar/> */}
     <FinanceContent/>
     <Footer/>
+    </div>
     </>
   )
 }
